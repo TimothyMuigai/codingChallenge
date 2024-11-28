@@ -5,12 +5,12 @@ const Lists = (props) => {
     const itemLists = props.items;
 
     const listItems = itemLists.map(item => 
-        <li key={item.id}>
-            {/* <img
+        <li key={item.id} className="relative w-96 list-none">
+            <img className="w-52"
                 src={item.image}
                 alt={item.name}
-            /> */}
-            <h1 className="text-red-400 font-extrabold text-4xl">{item.name}</h1>
+            />
+            <h1 className="z-10 absolute top-0 text-[#00FFFF] text-lg bg-black">{item.name}</h1>
         </li>
     );
 
